@@ -1,0 +1,8 @@
+language: java
+jdk: openjdk8
+script: mvn test -P single
+addons:
+  browserstack:
+    username: "nithyamani3"
+    access_key: "P4JKysg5WuchQxBfKQu1"
+    app_path: "/Users/nithyamani/Desktop/APPS/WikipediaSample.apk"
