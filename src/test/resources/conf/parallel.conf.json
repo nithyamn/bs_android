@@ -7,7 +7,7 @@
     "build": "testng-browserstack1",
     "name": "parallel_appium_test",
     "browserstack.debug": true,
-    "app": "bs://f2ee50d2323c66ea5d933f0fc8748f52dcf74bf3"
+    "app": "BROWSERSTACK_APP_ID"
   },
 
   "environments": {
