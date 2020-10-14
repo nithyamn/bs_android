@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class SingleTest extends BrowserStackTestNGTest {
 
@@ -24,6 +25,19 @@ public class SingleTest extends BrowserStackTestNGTest {
 
       List<AndroidElement> allProductsName = driver.findElementsByClassName("android.widget.TextView");
       Assert.assertTrue(allProductsName.size() > 0);
+        
+      JavascriptExecutor jse = (JavascriptExecutor)driver;
+        if(allProductsName.size() > 0) {
+            //TestStatus.mark(session, "passed", username, accesskey);
+            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"Validated\"}}");
+
+        }
+        else{
+            //TestStatus.mark(session,"failed", username, accesskey);
+            jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"Not Validated\"}}");
+
+        }
+      
     }
 }
 
