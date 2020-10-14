@@ -12,13 +12,13 @@
 
   "environments": {
     "pixel": {
-      "device": "Google Pixel"
+      "device": "Google Pixel 3"
     },
     "galaxy_s7": {
-      "device": "Samsung Galaxy S7"
+      "device": "Samsung Galaxy S9"
     },
     "nexus_9": {
-      "device": "Google Nexus 9"
+      "device": "OnePlus 8"
     }
   }
 }
