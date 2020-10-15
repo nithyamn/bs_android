@@ -4,8 +4,9 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "testng-browserstack1",
+    "build": "testng-browserstack",
     "name": "parallel_appium_test",
+    "project":"netent-webinar",
     "browserstack.debug": true,
     "app": "BROWSERSTACK_APP_ID"
   },
