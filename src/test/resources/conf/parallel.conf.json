@@ -6,7 +6,7 @@
   "capabilities": {
     "build": "testng-browserstack",
     "name": "parallel_appium_test",
-    "project":"netent-webinar",
+    "project":"playtika-webinar",
     "browserstack.debug": true,
     "app": "BROWSERSTACK_APP_ID"
   },
